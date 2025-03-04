@@ -6,7 +6,7 @@
 body{
     margin-top:1rem;
     line-height: 1.6;
-    background-color: aliceblue;
+    background-color: rgba(205, 216, 225, 0.992);
     color:#333;
 }
 header{
