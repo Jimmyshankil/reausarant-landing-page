@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scent-Based Mood Tracker</title>
+  <link rel="stylesheet" href="e.css">
+</head>
+<body>
+  <h1>Scent-Based Mood Tracker</h1>
+  <div class="form-group">
+    <label for="scent">Scent:</label>
+    <input type="text" id="scent" placeholder="Whats your scent?">
+  </div>
+  <div class="form-group">
+    <label for="feeling">Feeling:</label>
+    <input type="text" id="feeling" placeholder="your feeling?">
+  </div>
+  <button onclick="handleAddScent()">Add Scent</button>
+  <button onclick="handleAnalyzeMoods()">Analyze Moods</button>
+  <div class="music">
+    <audio conrols autoplay>
+        <source src="608.mp3">
+    </audio>
+  </div>
+
+  <div class="results" id="results" style="display: none;"></div>
+
+  <script src="e.js"></script>
+</body>
+</html>
