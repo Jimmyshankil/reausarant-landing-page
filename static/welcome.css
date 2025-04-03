@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
-/* General Reset */
+
 body, h1, h2, p, table {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Header Styling */
+
 h1 {
     font-size: 3rem;
     color: white;
@@ -33,7 +33,6 @@ h2 {
     text-transform: uppercase;
 }
 
-/* Profile Details */
 .profile-details {
     background: white;
     padding: 20px;
@@ -49,7 +48,7 @@ h2 {
     margin: 10px 0;
 }
 
-/* Animal Records Table */
+
 .animal-records {
     width: 80%;
     margin: 20px auto;
@@ -88,7 +87,7 @@ tr:hover {
     transition: 0.3s ease-in-out;
 }
 
-/* Back to Home Button */
+
 a {
     display: inline-block;
     margin-top: 20px;
