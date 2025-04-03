@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order & Reservation Page</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Menu</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/ac/c0/c6/acc0c69edcfd518a589bb5cec4f2caf7.jpg" alt="Zinger Burger">
+                <h2 class="card-title">Zinger Burger</h2>
+                <p class="card-description">Crispy chicken fillet, lettuce, Tomato, and a soft bun.</p>
+                <p class="card-price">$5.99</p>
+                <button class="button" onclick="orderItem('Zinger Burger', '$5.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/f6/ab/1b/f6ab1b3b6766d60ea5c58c3fb03bddd0.jpg" alt="Chicken Bucket">
+                <h2 class="card-title">Chicken Bucket</h2>
+                <p class="card-description">10 pieces of crispy fried chicken.</p>
+                <p class="card-price">$14.99</p>
+                <button class="button" onclick="orderItem('Chicken Bucket', '$14.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/4a/47/fb/4a47fbf6d0691f5a78d173a6827163ca.jpg" alt="Fries">
+                <h2 class="card-title">Fries</h2>
+                <p class="card-description">Golden crispy fries, lightly salted.</p>
+                <p class="card-price">$2.99</p>
+                <button class="button" onclick="orderItem('Fries', '$2.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/93/9a/41/939a415185c39dea80c0ee5c9a0c297e.jpg" alt="Pepsi">
+                <h2 class="card-title">Pepsi</h2>
+                <p class="card-description">Chilled soft drink to refresh your meal.</p>
+                <p class="card-price">$1.99</p>
+                <button class="button" onclick="orderItem('Pepsi', '$1.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/f2/ad/24/f2ad24ffebc2aa053930123c07d61b9b.jpg" alt="Pizza">
+                <h2 class="card-title">Pizza</h2>
+                <p class="card-description">Delicious cheesy pizza with your favorite toppings.</p>
+                <p class="card-price">$8.99</p>
+                <button class="button" onclick="orderItem('Pizza', '$8.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/2a/54/d9/2a54d9580ac37299e6ed0e7bd871e30c.jpg" alt="Cheese Burger">
+                <h2 class="card-title">Cheese Burger</h2>
+                <p class="card-description">A classic burger topped with melted cheese.</p>
+                <p class="card-price">$6.99</p>
+                <button class="button" onclick="orderItem('Cheese Burger', '$6.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/db/4a/17/db4a1721ba58d1a11eb573a98b8f82dd.jpg" alt="Hot Dog">
+                <h2 class="card-title">Hot Dog</h2>
+                <p class="card-description">Juicy hot dog with mustard and ketchup.</p>
+                <p class="card-price">$3.99</p>
+                <button class="button" onclick="orderItem('Hot Dog', '$3.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/be/19/43/be1943bf05e4e902bf0e8d11072b2720.jpg" alt="Chicken Wrap">
+                <h2 class="card-title">Chicken Wrap</h2>
+                <p class="card-description">Grilled chicken wrapped with fresh veggies and sauce.</p>
+                <p class="card-price">$7.49</p>
+                <button class="button" onclick="orderItem('Chicken Wrap', '$7.49')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/f2/3f/91/f23f913d8258ebf3671dd93bd13c45b0.jpg" alt="Tacos">
+                <h2 class="card-title">Tacos</h2>
+                <p class="card-description">Soft taco shells filled with seasoned chicken or beef.</p>
+                <p class="card-price">$6.99</p>
+                <button class="button" onclick="orderItem('Tacos', '$6.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/82/6f/d4/826fd4aad50f412a0fbcaf385902108e.jpg" alt="Sushi">
+                <h2 class="card-title">Sushi</h2>
+                <p class="card-description">Fresh sushi rolls with a variety of fillings.</p>
+                <p class="card-price">$11.99</p>
+                <button class="button" onclick="orderItem('Sushi', '$11.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/a2/a2/1f/a2a21f786ed955eb497d1907b47b7c8a.jpg" alt="Ramen">
+                <h2 class="card-title">Ramen</h2>
+                <p class="card-description">Hot, savory ramen with noodles and broth.</p>
+                <p class="card-price">$8.49</p>
+                <button class="button" onclick="orderItem('Ramen', '$8.49')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/14/ae/ff/14aeff7adbb45b18669ee2c8286c4c2f.jpg" alt="Dumplings">
+                <h2 class="card-title">Dumplings</h2>
+                <p class="card-description">Steamed dumplings filled with savory meat or veggies.</p>
+                <p class="card-price">$5.49</p>
+                <button class="button" onclick="orderItem('Dumplings', '$5.49')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/cc/a8/b0/cca8b07c7ff0e2c451a8607b35e8009a.jpg" alt="Salmon">
+                <h2 class="card-title">Grilled Salmon</h2>
+                <p class="card-description">Tender grilled salmon served with fresh vegetables.</p>
+                <p class="card-price">$13.99</p>
+                <button class="button" onclick="orderItem('Grilled Salmon', '$13.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/36/ac/14/36ac1473ccb81ad8b14bca54c9b33799.jpg" alt="Lamb Chops">
+                <h2 class="card-title">Lamb Chops</h2>
+                <p class="card-description">Succulent lamb chops seasoned and grilled to perfection.</p>
+                <p class="card-price">$19.99</p>
+                <button class="button" onclick="orderItem('Lamb Chops', '$19.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/11/fc/dd/11fcdd9282917b8f9a41845424fd3354.jpg" alt="Spaghetti">
+                <h2 class="card-title">Spaghetti</h2>
+                <p class="card-description">Classic Italian spaghetti with marinara sauce.</p>
+                <p class="card-price">$7.99</p>
+                <button class="button" onclick="orderItem('Spaghetti', '$7.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/b3/d6/d1/b3d6d13b1a304860d10aec1789bc9189.jpg" alt="Soup">
+                <h2 class="card-title">Soup</h2>
+                <p class="card-description">Hot soup with fresh ingredients to warm you up.</p>
+                <p class="card-price">$4.99</p>
+                <button class="button" onclick="orderItem('Soup', '$4.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/0d/81/85/0d8185846fd6ee12b44a6ec69dcc80dd.jpg" alt="Sandwich">
+                <h2 class="card-title">Club Sandwich</h2>
+                <p class="card-description">Classic club sandwich with turkey, cheese, and bacon.</p>
+                <p class="card-price">$6.49</p>
+                <button class="button" onclick="orderItem('Club Sandwich', '$6.49')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/4d/e7/32/4de7323907c58438e5cab011664f2f9a.jpg" alt="Nachos">
+                <h2 class="card-title">Nachos</h2>
+                <p class="card-description">Crispy nachos topped with melted cheese and salsa.</p>
+                <p class="card-price">$5.49</p>
+                <button class="button" onclick="orderItem('Nachos', '$5.49')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/eb/85/10/eb851021d334f93459f6b6c0aa7a6f18.jpg" alt="Chicken Wings">
+                <h2 class="card-title">Chicken Wings</h2>
+                <p class="card-description">Spicy and tangy chicken wings with a side of ranch.</p>
+                <p class="card-price">$8.99</p>
+                <button class="button" onclick="orderItem('Chicken Wings', '$8.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/1f/8c/73/1f8c736174c7fa08e9eac53749522daa.jpg" alt="Double Cheeseburger">
+                <h2 class="card-title">Double Cheeseburger</h2>
+                <p class="card-description">Two beef patties with melted cheese and all the fixings.</p>
+                <p class="card-price">$9.99</p>
+                <button class="button" onclick="orderItem('Double Cheeseburger', '$9.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/28/e1/e1/28e1e1be33d68d5629e50802d3dd7cb3.jpg" alt="Steak">
+                <h2 class="card-title">Ribeye Steak</h2>
+                <p class="card-description">Juicy ribeye steak cooked to your liking.</p>
+                <p class="card-price">$21.99</p>
+                <button class="button" onclick="orderItem('Ribeye Steak', '$21.99')">ORDER</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/09/77/f4/0977f4888665b49c9af6695b19479a16.jpg" alt="Fruit Salad">
+                <h2 class="card-title">Fruit Salad</h2>
+                <p class="card-description">Freshly cut seasonal fruits, light and refreshing.</p>
+                <p class="card-price">$6.49</p>
+                <button class="button" onclick="orderItem('Fruit Salad', '$6.49')">ORDER</button>
+            </div>
+        </div>
+        
+        <section class="reservation">
+            <h2>Make a reservation</h2>
+            <form id="reservationForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone" required>
+                <input type="date" id="date" required>
+                <button type="submit">Make Reservation</button>
+            </form>
+        </section>
+    </div>
+    
+    <script>
+        function orderItem(itemName, price) {
+            const mailtoLink = `mailto:monkeydloofey@gmail.com?subject=New Order: ${itemName}&body=Item: ${itemName}%0D%0APrice: ${price}`;
+            window.location.href = mailtoLink;
+        }
+
+        document.getElementById("reservationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const date = document.getElementById("date").value;
+            
+            const mailtoLink = `mailto:MonkeyDloffey@gmail.com?subject=New Reservation&body=Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0ADate: ${date}`;
+            
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>

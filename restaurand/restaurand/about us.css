@@ -1,0 +1,141 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #C60000;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about-text {
+    flex: 2;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #C60000; 
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+our-mission {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.our-mission h3 {
+    font-size: 2rem;
+    color: #C60000; 
+    margin-bottom: 1rem;
+}
+
+.our-mission p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+.contacts h3 {
+    font-size: 2rem;
+    color: #C60000;
+    margin-bottom: 1rem;
+}
+
+.contacts p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: #C60000; 
+    color: #fff;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    text-decoration: blueviolet;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.social-icons i {
+    width: 40px;
+    height: 40px;
+    background-color: #7802ff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: #d20000;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    background: white;
+    border: 2px solid #d20000;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #d20000;
+    margin: 10px 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #333;
+}
+
+.card-price {
+    font-size: 1.2em;
+    color: #d20000;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #d20000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+
+}
+
+.button:hover {
+    background-color: #a00000;
+}
+
+.reservation-form {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #d20000;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.reservation-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
