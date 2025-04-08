@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Card</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/98/0c/81/980c81c0ee16665037a472194f5749a4.jpg" alt="Profile Image" id="profileImage">
+    <div class="card-content">
+      <h2>Jimmy Shankil</h2>
+      <p>Web Developer</p>
+      <p>Email: jimmy.shankil@example.com</p>
+      <div class="description">
+        <p>Hello! I'm Jimmy Shankil, a passionate web developer with a love for creating dynamic and user-friendly websites. I’m always excited about new technologies and learning new skills to build the web of tomorrow. Let’s connect!</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://www.linkedin.com/in/jimmyshankil" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/jimmyshankil" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/jimmyshankil" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    const profileImage = document.getElementById('profileImage');
+    const card = document.querySelector('.card');
+
+    profileImage.addEventListener('mouseover', () => {
+      card.style.backgroundColor = '#2f2f2f';  
+    });
+
+    profileImage.addEventListener('mouseout', () => {
+      card.style.backgroundColor = '#000';  
+    });
+  </script>
+</body>
+</html>
