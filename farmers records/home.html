@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/static/farmersstyle.css">
+</head>
+<body>
+    <div class ="links">
+        <button>
+         <a href="{{ url_for('profile') }}">Profile</a>
+        </button>
+        <button>
+            <a href="{{ url_for('subscription') }}">subscription</a>
+        </button>
+        <button>
+            <a href="{{ url_for('aboutus') }}">About us</a>
+        </button>
+    </div>
+
+    <h1>Sitka Ranch Farmer Records Inventory</h1>
+
+    <iframe width="600" height="200" src="https://www.youtube.com/embed/Q0HqheH5U8Q"
+        title="Montana Ranch For Sale - Sitka Ranch" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+
+    <section class="menu">
+        <h2>Virtual Farm</h2>
+        <div class="farm">
+            <div class="farm-item">
+                <p>Boran Bull</p>
+                <img src="https://i.pinimg.com/736x/fd/f8/f0/fdf8f08a09264e2cb8f114a9f6a5e213.jpg" width="300" height="300">
+            </div>
+            <div class="farm-item">
+                <p>Pig</p>
+                <img src="https://i.pinimg.com/736x/18/8c/19/188c19d7cdea75b010d466cdf043da8f.jpg" width="200" height="200">
+            </div>
+        </div>
+    </section>
+
+    <form id="record-form" action="/record_animal" method="POST">
+        <label for="animal">Animal name:</label>
+        <input type="text" id="animal" name="animal" required>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Add Record</button>
+    </form>
+</body>
+</html>
