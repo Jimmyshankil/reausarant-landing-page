@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <header>Jimmy .SHN. Portfolio</header>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('about')">About</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+  </nav>
+
+  <div class="container">
+    
+    <section id="home">
+      <div class="profile-container">
+        <div class="profile-info">
+          <h2>Welcome and be my guest! </h2>
+          <p>Hi, I'm a beginner web developer creating simple yet effective web apps. Here are some of my projects:</p>
+        </div>
+        <img src="https://via.placeholder.com/180" alt="Profile" class="profile-img" />
+      </div>
+      <div class="projects" id="projects"></div>
+    </section>
+
+   
+    <section id="about" class="hidden">
+      <h2>About Me</h2>
+      <p>I'm an aspiring web developer with a passion for creating clean, responsive websites using HTML, CSS, and JavaScript. I'm currently exploring front-end development and a bit of back-end development. I plan to dive more into backend technologies soon.</p>
+      <p>I enjoy problem-solving, creativity, and continuous learning through building projects.</p>
+    </section>
+
+    
+    <section id="contact" class="hidden">
+      <h2>Contact Me</h2>
+      <div class="contact-box">
+        <p><strong>GitHub:</strong> <a href="https://github.com/Jimmyshankil" target="_blank">@Jimmyshankil</a></p>
+        <p><strong>Email:</strong> <a href="mailto:jimmyshankil76@gmail.com">jimmyshankil76@gmail.com</a></p>
+        <p>I’m open to collaboration and feedback. Feel free to reach out!</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Beginner Dev. All rights reserved.
+  </footer>
+
+  <script>
+    const projects = [
+      {
+        title: "farmers records",
+        description: "A basic website built with HTML, CSS, and flask.",
+        github_1: "https://github.com/Jimmyshankil/reausarant-landing-page/tree/master/templates",
+        github_2: "https://github.com/Jimmyshankil/reausarant-landing-page/tree/master/static",
+        live: "https://beginnerdev.github.io/first-website",
+      },
+      {
+        title: "restaurant landing page",
+        description: "a restaurant landing page with html and css.",
+        github_1: "https://github.com/Jimmyshankil/reausarant-landing-page/tree/master/restaurand/restaurand",
+        github_2: "https://github.com/Jimmyshankil/reausarant-landing-page/tree/master/restaurand/restaurand",
+        live: "https://beginnerdev.github.io/todo-app",
+      },
+      {
+        title: "personal card",
+        description: "A personal card using html,javascript and css.",
+        github_1: "https://github.com/Jimmyshankil/weather-app/tree/master/templates",
+        github_2: "https://github.com/Jimmyshankil/weather-app/tree/master/static",
+        live: "https://beginnerdev.github.io/weather-app",
+      },
+    ];
+
+    const projectContainer = document.getElementById("projects");
+    projects.forEach(project => {
+      const div = document.createElement("div");
+      div.className = "project";
+      div.innerHTML = `
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <a href="${project.github_1}" target="_blank">GitHub (Templates)</a>
+        <br>
+        <a href="${project.github_2}" target="_blank">GitHub (Static)</a>
+        <br>
+        <a href="${project.live}" target="_blank">Live Demo</a>
+      `;
+      projectContainer.appendChild(div);
+    });
+
+    function showPage(pageId) {
+      document.querySelectorAll("section").forEach(section => {
+        section.classList.add("hidden");
+      });
+      document.getElementById(pageId).classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
